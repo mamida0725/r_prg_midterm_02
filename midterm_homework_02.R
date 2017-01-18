@@ -1,0 +1,6 @@
+par(mfrow = c(3, 2))
+plot(iris$Sepal.Length, iris$Petal.Length, main = "Iris Sepal.Length vs. Petal.Length", xlab = "Sepal Length", ylab = "Petal.Length", col ="blue")
+plot(pressure$temperature, pressure$pressure, type = "l", main = "Pressure Temperate vs. Pressure", col = "red")
+hist(iris$Sepal.Width, main = "Iris Sepal Width", xlab = "Width")
+boxplot(iris$Sepal.Width ~ iris$Species, main = "Sepal width by species")
+barplot(table(factor(mtcars$gear)), main = "Vehicle counts by gear types", xlab = "Gear", ylab = "Vehicle counts")
